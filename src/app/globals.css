@@ -12,8 +12,8 @@
   --very-dark-blue: hsl(233, 12%, 13%);
   --very-pale-red: hsl(13, 100%, 96%);
   --very-light-gray: hsl(0, 0%, 98%);
-  --background: #ffffff;
-  --foreground: #171717;
+  /* --background: #ffffff; */
+  /* --foreground: #171717; */
 
   /* Font */
   --base-font: 16px;
@@ -22,16 +22,9 @@
   --bold: 700;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  color: var(--foreground);
-  background: var(--background);
+  /* color: var(--foreground); */
+  /* background: var(--background); */
   font-size: var(--base-font);
 }
 .no-scroll {

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Be_Vietnam_Pro } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const bevietnam = Be_Vietnam_Pro({
   subsets: ["latin"],
@@ -8,8 +10,9 @@ const bevietnam = Be_Vietnam_Pro({
 });
 
 export const metadata: Metadata = {
-  title: "きそ(kiso) | FScode",
-  description: "A basic NextJS template for Frontend Mentor Challenges",
+  title: "Manage Landing Page | FScode",
+  description:
+    "Solution for Manage Landing Page challenge from Frontend Mentor",
 };
 
 export default function RootLayout({
@@ -22,7 +25,9 @@ export default function RootLayout({
       <body
         className={`${bevietnam.className} flex min-h-screen flex-col scroll-smooth antialiased`}
       >
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
