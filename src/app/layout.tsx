@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${bevietnam.className} flex min-h-screen flex-col scroll-smooth antialiased`}
+        className={`${bevietnam.className} flex min-h-screen flex-col scroll-smooth bg-[url(/images/bg-tablet-pattern.svg)] bg-[length:444px] bg-[right_-126px_top_-104px] bg-no-repeat antialiased`}
       >
         <Header />
         {children}
