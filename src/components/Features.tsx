@@ -15,7 +15,7 @@ export default function Features() {
       <div className="mt-[3.25rem] space-y-[2.875rem] pl-4">
         {featuresCopy.map((feature) => (
           <section className="" key={feature.id}>
-            <div className="flex items-center bg-ml-very-pale-red">
+            <div className="flex items-center rounded-l-full bg-ml-very-pale-red">
               <span className="block content-center rounded-full bg-ml-bright-red px-6 py-[0.4375rem] font-bold text-white">
                 {feature.id}
               </span>
