@@ -73,7 +73,7 @@ export const testimonials = [
   },
 ];
 
-export const footerLinks = [
+export const footerNavLinks = [
   {
     label: "Home",
     href: "#",
@@ -90,6 +90,8 @@ export const footerLinks = [
     label: "About Us",
     href: "#",
   },
+];
+export const footerSupportLinks = [
   {
     label: "Careers",
     href: "#",
