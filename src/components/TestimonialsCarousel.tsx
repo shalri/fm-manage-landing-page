@@ -11,6 +11,7 @@ import {
   type CarouselApi,
 } from "@/components/ui/carousel";
 import { useState, useEffect } from "react";
+import Button from "./Button";
 
 export default function Testimonials() {
   const [api, setApi] = useState<CarouselApi>();
@@ -31,7 +32,7 @@ export default function Testimonials() {
   }, [api]);
 
   return (
-    <article className="mt-[68px]">
+    <article className="mt-[68px] flex flex-col items-center">
       <h2 className="text-center text-3xl font-bold text-ml-dark-blue">
         What they&rsquo;ve said
       </h2>
@@ -86,7 +87,7 @@ export default function Testimonials() {
           />
         ))}
       </div>
-      <button className="">Get Started</button>
+      <Button className="mt-12" />
     </article>
   );
 }
