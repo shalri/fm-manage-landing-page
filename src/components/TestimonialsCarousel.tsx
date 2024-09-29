@@ -32,7 +32,7 @@ export default function Testimonials() {
   }, [api]);
 
   return (
-    <article className="mt-[68px] flex flex-col items-center">
+    <article className="mt-[68px] flex flex-col items-center pb-10">
       <h2 className="text-center text-3xl font-bold text-ml-dark-blue">
         What they&rsquo;ve said
       </h2>
