@@ -105,3 +105,26 @@ export const footerSupportLinks = [
     href: "#",
   },
 ];
+
+export const socialLinks = [
+  {
+    label: "Facebook",
+    href: "#",
+  },
+  {
+    label: "YouTube",
+    href: "#",
+  },
+  {
+    label: "Twitter",
+    href: "#",
+  },
+  {
+    label: "Pinterest",
+    href: "#",
+  },
+  {
+    label: "Instagram",
+    href: "#",
+  },
+];
