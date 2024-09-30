@@ -6,12 +6,13 @@ import SocialLinks from "./ui/socialLinks";
 export default function Footer() {
   return (
     <footer className="bg-ml-very-dark-blue pb-8 pt-[52px] text-white">
-      <form className="flex justify-between space-x-2 px-6">
+      <form className="flex flex-nowrap items-center justify-center gap-2 px-6">
         <input
-          className="rounded-full px-6 placeholder:text-sm placeholder:text-ml-dark-grayish-blue"
+          className="flex-grow rounded-full px-6 py-[10px] text-ml-very-dark-blue placeholder:text-sm placeholder:text-ml-dark-grayish-blue"
+          type="email"
           placeholder="Updates in your inbox..."
         />
-        <Button text="GO" className="px-[30px] shadow-none" />
+        <Button text="GO" className="px-[30px] shadow-none" type="submit" />
       </form>
 
       <div className="mx-auto mt-[56px] grid max-w-[312px] grid-cols-2 text-sm">
