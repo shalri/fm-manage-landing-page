@@ -16,9 +16,12 @@ function NavContent({
 }) {
   return (
     <nav className="" ref={navRef}>
-      <ul className="mx-6 mt-[100px] bg-white">
+      <ul className="mx-6 mt-[6.5rem] space-y-[1.4385rem] rounded-[0.375rem] bg-white py-10">
         {headerNavLinks.map((link) => (
-          <li className="" key={link.label}>
+          <li
+            className="text-center font-bold tracking-tight text-ml-dark-blue"
+            key={link.label}
+          >
             <Link onClick={handleLinkClick} href={link.href}>
               {link.label}
             </Link>
@@ -43,10 +46,10 @@ export default function Navigation() {
         {isMobileNavActive && (
           <motion.div
             key="mobileNav"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-30 bg-gradient-to-t from-ml-dark-blue to-transparent"
+            className="fixed inset-0 z-30 bg-gradient-to-t from-black/50 to-transparent"
           >
             {children}
           </motion.div>
@@ -64,7 +67,6 @@ export default function Navigation() {
 
   return (
     <>
-      {/* <nav className="relative"> */}
       {isSmallScreen ? (
         mobileNavAnimationWrapper(
           <NavContent handleLinkClick={handleLinkClick} navRef={navRef} />,
@@ -72,7 +74,6 @@ export default function Navigation() {
       ) : (
         <NavContent handleLinkClick={handleLinkClick} navRef={navRef} />
       )}
-      {/* </nav> */}
       <button
         className={cn(
           "z-50 size-6 bg-[url(/images/icon-hamburger.svg)] bg-contain bg-no-repeat sm:hidden",
