@@ -16,10 +16,10 @@ function NavContent({
 }) {
   return (
     <nav className="" ref={navRef}>
-      <ul className="mx-6 mt-[6.5rem] space-y-[1.4385rem] rounded-[0.375rem] bg-white py-10">
+      <ul className="sm:justify-baseline mx-6 mt-[6.5rem] space-y-[1.4385rem] rounded-[0.375rem] bg-white py-10 sm:mx-0 sm:mt-0 sm:flex sm:space-x-[32px] sm:space-y-0 sm:bg-transparent sm:pb-[2px] sm:pr-[8px] sm:pt-0">
         {headerNavLinks.map((link) => (
           <li
-            className="text-center font-bold tracking-tight text-ml-dark-blue"
+            className="text-center font-bold tracking-tight text-ml-dark-blue sm:text-[0.80rem]"
             key={link.label}
           >
             <Link onClick={handleLinkClick} href={link.href}>

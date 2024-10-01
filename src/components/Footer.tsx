@@ -45,7 +45,7 @@ export default function Footer() {
           <span className="sr-only">Home</span>
         </Link>
       </div>
-      <div className="mt-12 text-center text-xs">
+      <div className="mt-12 text-center text-xs text-white/30">
         Copyright 2020. All Rights Reserved
       </div>
     </footer>
