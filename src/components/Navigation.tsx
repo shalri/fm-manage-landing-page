@@ -15,7 +15,7 @@ function NavContent({
   navRef: React.RefObject<HTMLDivElement>;
 }) {
   return (
-    <nav className="" ref={navRef}>
+    <nav className="z-50" ref={navRef}>
       <ul className="sm:justify-baseline mx-6 mt-[6.5rem] space-y-[1.4385rem] rounded-[0.375rem] bg-white py-10 sm:mx-0 sm:mt-0 sm:flex sm:space-x-[32px] sm:space-y-0 sm:bg-transparent sm:pb-[2px] sm:pr-[8px] sm:pt-0">
         {headerNavLinks.map((link) => (
           <li
@@ -33,7 +33,7 @@ function NavContent({
 }
 
 export default function Navigation() {
-  const isSmallScreen = useSmallScreen();
+  const isSmallScreen = useSmallScreen(792);
   const navRef = useRef<HTMLDivElement>(null);
   const { isMobileNavActive, toggleMobileNav, closeMobileNav } = useMobileNav(
     navRef,
