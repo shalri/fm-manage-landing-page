@@ -31,6 +31,10 @@ body {
   overflow: hidden;
 }
 
+.clamp {
+  font-size: clamp(1.75rem, 2.6389vw, 2.375rem);
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

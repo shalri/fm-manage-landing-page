@@ -40,7 +40,7 @@ export const featuresCopy = [
   },
   {
     id: "02",
-    heading: "Advanced built-in report",
+    heading: "Advanced built-in reports",
     body: "Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed.",
   },
   {
