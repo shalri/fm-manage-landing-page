@@ -14,6 +14,7 @@ export default function Testimonials() {
             className="relative mb-[40px] flex flex-col items-center justify-center rounded-sm bg-ml-very-light-gray pb-8"
           >
             <div className="absolute -top-[40px] size-[72px]">
+              {" "}
               <Image
                 src={testimony.avatar}
                 fill

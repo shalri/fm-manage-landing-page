@@ -30,6 +30,10 @@ export default function RootLayout({
         </div>
         <Header />
         {children}
+        <div className="absolute -left-[482px] bottom-[1102px] hidden h-[600px] w-[790px] sm:block">
+          <div className="h-full w-full bg-[url(/images/bg-tablet-pattern.svg)] bg-cover bg-no-repeat"></div>
+        </div>
+
         <Footer />
       </body>
     </html>

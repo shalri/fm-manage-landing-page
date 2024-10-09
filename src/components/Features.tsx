@@ -32,9 +32,9 @@ export default function Features() {
           ))}
         </div>
       </div>
-      <div className="absolute -bottom-[350px] -left-[482px] hidden h-[600px] w-[790px] sm:block">
-        <div className="h-full w-full bg-[url(/images/bg-tablet-pattern.svg)] bg-cover bg-no-repeat"></div>
-      </div>
+      {/* <div className="absolute -bottom-[350px] -left-[482px] hidden h-[600px] w-[790px] sm:block"> */}
+      {/*   <div className="h-full w-full bg-[url(/images/bg-tablet-pattern.svg)] bg-cover bg-no-repeat"></div> */}
+      {/* </div> */}
     </article>
   );
 }
