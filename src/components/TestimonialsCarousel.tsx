@@ -37,7 +37,7 @@ export default function Testimonials() {
 
   return (
     <article className="sm:max-w-screen mt-[68px] flex flex-col items-center pb-10 sm:mt-[154px] sm:overflow-hidden">
-      <h2 className="text-center text-3xl font-bold text-ml-dark-blue sm:justify-center">
+      <h2 className="z-30 text-center text-3xl font-bold text-ml-dark-blue sm:justify-center">
         What they&rsquo;ve said
       </h2>
       {isSmallScreen ? (
@@ -58,7 +58,7 @@ export default function Testimonials() {
           </div>
         </Carousel>
       ) : (
-        <div className="z-20">
+        <div className="hidden sm:z-20 sm:block">
           <Ticker
             duration={40}
             isPlaying={isPlaying}
