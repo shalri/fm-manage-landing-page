@@ -22,7 +22,7 @@ realistic projects.
 
 - [Solution
   URL](https://github.com/shalri/fm-manage-landing-page)
-- [Live Site URL](https://fm-manage-landing-page-orpin.vercel.app/)
+- [Live Site URL](https://fm-manage-landing-page-fscode.vercel.app/)
 
 ## My process
 
