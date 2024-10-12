@@ -14,9 +14,6 @@ export default function Hero() {
             {heroCopy.body}
           </p>
         </div>
-        {/* <button className="z-20m mx-auto mt-7 rounded-full bg-ml-bright-red px-8 py-3 text-[13px] font-semibold text-white shadow-lg shadow-red-500/70 sm:ml-6 sm:mt-[36px]"> */}
-        {/*   Get Started */}
-        {/* </button> */}
         <Button className="mx-auto mt-7 text-[13px] hover:opacity-80 sm:ml-6 sm:mt-[36px]" />
       </section>
       <div className="absolute -bottom-[72px] right-0 h-[300px] w-[130px] overflow-hidden sm:hidden">
