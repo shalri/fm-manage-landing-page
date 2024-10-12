@@ -4,8 +4,7 @@ export default function Features() {
   return (
     <article className="mt-[6.125rem] sm:relative sm:mt-[6.5rem]">
       <div className="mx-auto max-w-[72.375rem] flex-wrap sm:grid sm:grid-cols-2">
-        <div className="space-y-3 px-8 text-center sm:max-w-[475px] sm:space-y-6 sm:px-6 sm:text-left">
-          {/* <h2 className="clamp w-full text-pretty text-[1.75rem] font-bold leading-[1.6] text-ml-dark-blue sm:min-w-[27.625rem] sm:pt-1 sm:text-[2.375rem] sm:leading-[1.2] sm:-tracking-[0.012em]"> */}
+        <div className="z-50 space-y-3 px-8 text-center sm:max-w-[475px] sm:space-y-6 sm:px-6 sm:text-left">
           <h2 className="clamp w-full text-pretty text-[1.75rem] font-bold leading-[1.6] text-ml-dark-blue sm:min-w-[27.625rem] sm:pt-1 sm:leading-[1.2] sm:-tracking-[0.012em]">
             {manageInfoCopy.heading}
           </h2>
@@ -32,9 +31,6 @@ export default function Features() {
           ))}
         </div>
       </div>
-      {/* <div className="absolute -bottom-[350px] -left-[482px] hidden h-[600px] w-[790px] sm:block"> */}
-      {/*   <div className="h-full w-full bg-[url(/images/bg-tablet-pattern.svg)] bg-cover bg-no-repeat"></div> */}
-      {/* </div> */}
     </article>
   );
 }

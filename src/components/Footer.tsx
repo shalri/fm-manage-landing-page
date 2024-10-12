@@ -5,7 +5,7 @@ import SocialLinks from "./ui/socialLinks";
 
 export default function Footer() {
   return (
-    <footer className="bg-ml-very-dark-blue pb-8 pt-[52px] text-white sm:pb-12">
+    <footer className="bg-ml-very-dark-blue pb-8 pt-[3.25rem] text-white sm:pb-12">
       <div className="mx-auto max-w-[400px] px-7 sm:mt-2 sm:grid sm:max-w-[72.375rem] sm:grid-cols-[1fr_2fr_1fr] sm:pb-0">
         <form className="flex flex-nowrap items-center justify-center gap-2 px-6 sm:items-start sm:sm:pr-0">
           <input
@@ -16,7 +16,6 @@ export default function Footer() {
           <Button
             text="GO"
             className="px-[30px] shadow-none sm:px-[18px] sm:text-sm"
-            type="submit"
           />
         </form>
 
@@ -24,21 +23,31 @@ export default function Footer() {
           <ul className="space-y-[15px] place-self-center pr-7 sm:place-self-start sm:pl-[0.75rem]">
             {footerNavLinks.map((link) => (
               <li key={link.label}>
-                <Link href={link.href}>{link.label}</Link>
+                <Link
+                  href={link.href}
+                  className="transition-colors duration-300 hover:text-ml-bright-red"
+                >
+                  {link.label}
+                </Link>
               </li>
             ))}
           </ul>
           <ul className="ml-auto space-y-[15px] pr-4 sm:ml-0 sm:pl-[1.75rem]">
             {footerSupportLinks.map((link) => (
               <li key={link.label}>
-                <Link href={link.href}>{link.label}</Link>
+                <Link
+                  href={link.href}
+                  className="transition-colors duration-300 hover:text-ml-bright-red"
+                >
+                  {link.label}
+                </Link>
               </li>
             ))}
           </ul>
         </div>
 
         <ul className="mt-12 flex justify-between px-9 sm:col-span-1 sm:col-start-1 sm:row-start-2 sm:mr-auto sm:mt-0 sm:max-w-[192px] sm:space-x-[10px] sm:place-self-end sm:pl-0">
-          <SocialLinks className="text-[2.25rem] hover:text-ml-bright-red sm:text-[1.5rem]" />
+          <SocialLinks className="text-[2.25rem] transition-colors duration-300 hover:text-ml-bright-red sm:text-[1.5rem]" />
         </ul>
 
         <div className="mt-[50px] flex justify-center sm:col-span-1 sm:row-start-1 sm:mt-0 sm:block">

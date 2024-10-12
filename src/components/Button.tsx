@@ -12,7 +12,7 @@ export default function Button({
   return (
     <button
       className={cn(
-        "z-20 rounded-full bg-ml-bright-red px-8 py-3 text-[13px] font-semibold text-white shadow-lg shadow-red-500/70",
+        "z-20 rounded-full bg-ml-bright-red px-8 py-3 text-[13px] font-semibold text-white shadow-lg shadow-red-500/70 transition-all duration-300 hover:opacity-70",
         className,
       )}
     >

@@ -22,7 +22,11 @@ function NavContent({
             className="text-center font-bold tracking-tight text-ml-dark-blue sm:text-[0.80rem]"
             key={link.label}
           >
-            <Link onClick={handleLinkClick} href={link.href}>
+            <Link
+              onClick={handleLinkClick}
+              href={link.href}
+              className="transition-all duration-300 hover:text-ml-bright-red sm:hover:opacity-70"
+            >
               {link.label}
             </Link>
           </li>
